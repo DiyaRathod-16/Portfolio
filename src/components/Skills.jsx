@@ -8,10 +8,10 @@ function SkillTable({ groups }) {
       <table className="w-full border-separate border-spacing-0">
         <thead className="bg-surface/95">
           <tr>
-            <th className="px-6 py-4 text-left text-xs font-semibold uppercase tracking-[0.18em] text-muted">
+            <th className="px-4 py-4 text-left text-[10px] font-semibold uppercase tracking-[0.2em] text-muted sm:px-6 sm:text-xs">
               Category
             </th>
-            <th className="px-6 py-4 text-left text-xs font-semibold uppercase tracking-[0.18em] text-muted">
+            <th className="px-4 py-4 text-left text-[10px] font-semibold uppercase tracking-[0.2em] text-muted sm:px-6 sm:text-xs">
               Skills
             </th>
           </tr>
@@ -19,17 +19,17 @@ function SkillTable({ groups }) {
         <tbody>
           {groups.map((group, index) => (
             <tr key={group.title} className={index === 0 ? '' : 'border-t border-line'}>
-              <td className="px-6 py-5 align-top">
+              <td className="px-4 py-4 align-top sm:px-6 sm:py-5">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#f2ebe7] text-night">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#f2ebe7] text-night sm:h-10 sm:w-10">
                     <Icon name={group.icon} />
                   </div>
-                  <p className="text-lg font-black tracking-[-0.02em] text-ink">
+                  <p className="text-base font-black tracking-[-0.02em] text-ink sm:text-lg">
                     {group.title}
                   </p>
                 </div>
               </td>
-              <td className="px-6 py-5 align-top text-sm leading-7 text-muted">
+              <td className="px-4 py-4 align-top text-sm leading-7 text-muted sm:px-6 sm:py-5">
                 {group.skills.join(', ')}
               </td>
             </tr>
@@ -55,10 +55,10 @@ function Skills() {
       <div className="section-shell relative">
         <div className="mx-auto max-w-4xl text-center">
           <span className="eyebrow">Skills</span>
-          <h2 className="light-heading mt-8 font-display text-[clamp(4rem,10vw,7rem)] font-black leading-[0.92] tracking-[0.02em]">
+          <h2 className="light-heading mt-8 font-display text-[clamp(2.8rem,11vw,7rem)] font-black leading-[0.92] tracking-[0.02em] sm:text-[clamp(4rem,10vw,7rem)]">
             Toolkit
           </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-muted">
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-muted sm:text-lg sm:leading-8">
             A practical stack for modern development, hackathon speed, and long-term product
             building.
           </p>

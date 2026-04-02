@@ -87,7 +87,7 @@ function Contact() {
         >
           <motion.div variants={itemVariants}>
             <span className="eyebrow border-white/10 bg-white/[0.08] text-white/70">Contact</span>
-            <h2 className="hero-display mx-auto mt-6 inline-block whitespace-nowrap text-[clamp(2.25rem,3.4vw,4rem)] font-black leading-[0.92] tracking-[-0.055em] text-white">
+            <h2 className="font-display mx-auto mt-6 max-w-[12ch] text-[clamp(2.8rem,11vw,7rem)] font-black leading-[0.92] tracking-[-0.01em] text-white sm:max-w-[11ch] sm:text-[clamp(4rem,10vw,7rem)]">
               Let&apos;s build something meaningful together.
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-white/68 sm:text-lg">
@@ -106,7 +106,7 @@ function Contact() {
         >
           <motion.div
             variants={itemVariants}
-            className="flex h-fit flex-col rounded-[34px] border border-white/10 bg-white/[0.06] p-5 shadow-[0_30px_90px_-48px_rgba(7,6,12,0.78)] backdrop-blur-2xl sm:p-7 lg:h-fit lg:self-start lg:p-8"
+            className="flex h-fit flex-col rounded-[28px] border border-white/10 bg-white/[0.06] p-4 shadow-[0_30px_90px_-48px_rgba(7,6,12,0.78)] backdrop-blur-2xl sm:rounded-[34px] sm:p-7 lg:h-fit lg:self-start lg:p-8"
           >
             <div className="grid gap-4">
               {contactCards.map((item) => (
@@ -140,15 +140,15 @@ function Contact() {
 
           <motion.div
             variants={itemVariants}
-            className="flex h-fit flex-col rounded-[34px] border border-white/10 bg-white/[0.07] p-4 shadow-[0_30px_90px_-48px_rgba(7,6,12,0.78)] backdrop-blur-2xl sm:p-5 lg:self-start lg:p-5"
+            className="flex h-fit flex-col rounded-[28px] border border-white/10 bg-white/[0.07] p-3 shadow-[0_30px_90px_-48px_rgba(7,6,12,0.78)] backdrop-blur-2xl sm:rounded-[34px] sm:p-5 lg:self-start lg:p-5"
           >
-            <div className="relative flex flex-col overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.03] p-4 sm:p-5 lg:p-5">
+            <div className="relative flex flex-col overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.03] p-3 sm:rounded-[28px] sm:p-5 lg:p-5">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.14),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(236,72,153,0.12),transparent_24%)]" />
 
-              <div className="relative flex items-center justify-between gap-4">
-                <div>
-                  <p className="text-sm uppercase tracking-[0.3em] text-white/45">Start a project</p>
-                  <h3 className="mt-3 font-display text-3xl font-black tracking-[-0.03em] text-white sm:text-4xl">
+              <div className="relative flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <div className="text-center sm:text-left">
+                  <p className="text-xs uppercase tracking-[0.3em] text-white/45 sm:text-sm">Start a project</p>
+                  <h3 className="mt-3 font-display text-2xl font-black tracking-[-0.03em] text-white sm:text-4xl">
                     Send a message
                   </h3>
                 </div>

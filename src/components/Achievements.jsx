@@ -39,7 +39,7 @@ function Achievements() {
           <span className="eyebrow">
             Achievements & Certifications
           </span>
-          <h2 className="light-heading mt-8 font-display text-[clamp(4rem,10vw,7rem)] font-black leading-[0.92] tracking-[-0.01em]">
+          <h2 className="light-heading mt-8 font-display text-[clamp(2.8rem,11vw,7rem)] font-black leading-[0.92] tracking-[-0.01em] sm:text-[clamp(4rem,10vw,7rem)]">
             Wins &amp; Learning
           </h2>
         </div>
@@ -48,7 +48,7 @@ function Achievements() {
           {achievements.map((item, index) => (
             <article
               key={item.title}
-              className="flex h-full flex-col rounded-[32px] border border-line bg-white p-7 shadow-panel sm:p-8"
+              className="flex h-full flex-col rounded-[28px] border border-line bg-white p-5 shadow-panel sm:rounded-[32px] sm:p-8"
             >
               <span className="inline-flex w-fit rounded-full bg-night px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-white">
                 {item.year}
@@ -64,7 +64,7 @@ function Achievements() {
         </div>
 
         <div className="mx-auto mt-14 max-w-6xl">
-          <h3 className="mb-8 text-center text-3xl font-black tracking-[-0.03em] text-ink">
+          <h3 className="mb-8 text-center text-2xl font-black tracking-[-0.03em] text-ink sm:text-3xl">
             Certifications
           </h3>
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
@@ -72,14 +72,14 @@ function Achievements() {
               <button
                 key={cert.name}
                 onClick={() => handleCertificateClick(cert)}
-                className="group flex h-full cursor-pointer flex-col justify-between rounded-[24px] border border-line bg-white p-6 text-left shadow-soft transition duration-300 hover:-translate-y-1 hover:border-night/20 hover:shadow-panel"
+                className="group flex h-full cursor-pointer flex-col justify-between rounded-[22px] border border-line bg-white p-5 text-left shadow-soft transition duration-300 hover:-translate-y-1 hover:border-night/20 hover:shadow-panel sm:rounded-[24px] sm:p-6"
               >
                 <div className="flex flex-1 flex-col items-center gap-4">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#f2ebe7] text-night transition group-hover:bg-[#efe5df]">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#f2ebe7] text-night transition group-hover:bg-[#efe5df] sm:h-14 sm:w-14">
                     <Icon name="trophy" className="h-6 w-6" />
                   </div>
                   <div className="text-center">
-                    <p className="font-semibold text-ink" style={{ letterSpacing: '0.05em' }}>
+                    <p className="text-sm font-semibold text-ink sm:text-[0.95rem]" style={{ letterSpacing: '0.05em' }}>
                       {cert.label}
                     </p>
                     <p className="mt-1 text-xs text-muted">{cert.issuer}</p>

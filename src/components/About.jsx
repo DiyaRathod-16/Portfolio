@@ -46,26 +46,26 @@ function About() {
           variants={containerVariants}
           className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[minmax(0,0.98fr)_minmax(0,1.02fr)] lg:items-start lg:gap-20"
         >
-          <motion.div variants={itemVariants} className="max-w-3xl lg:pt-4">
+          <motion.div variants={itemVariants} className="mx-auto max-w-3xl text-center lg:mx-0 lg:pt-4 lg:text-left">
             <span className="eyebrow">About</span>
             <h2
-              className="hero-display mt-8 max-w-[11ch] text-[clamp(3rem,5.6vw,6rem)] font-black leading-[0.88] tracking-[-0.05em] text-ink sm:max-w-[10ch]"
+              className="hero-display mx-auto mt-8 max-w-[11ch] text-[clamp(2.6rem,10vw,6rem)] font-black leading-[0.9] tracking-[-0.05em] text-ink sm:max-w-[10ch] sm:text-[clamp(3rem,5.6vw,6rem)] lg:mx-0"
               style={{ textWrap: 'balance' }}
             >
               Intentional work, driven by curiosity and clarity.
             </h2>
 
-            <p className="mt-6 max-w-2xl text-lg leading-9 text-muted sm:text-xl sm:leading-10">
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-muted sm:text-lg sm:leading-9 lg:mx-0 lg:text-xl lg:leading-10">
               I&apos;m a B.Tech Computer Science student focused on building thoughtful digital
               products with AI, web development, and structured thinking. I care about systems
               that feel elegant to use and practical to maintain.
             </p>
 
-            <div className="mt-10 flex flex-nowrap gap-2 overflow-x-auto pb-1 sm:gap-3 sm:overflow-visible">
+            <div className="mt-10 grid grid-cols-2 gap-2 pb-1 sm:gap-3 lg:grid-cols-4 lg:gap-3">
               {['AI-first thinking', 'Clean code', 'Problem solving', 'Collaboration'].map((tag) => (
                 <span
                   key={tag}
-                  className="shrink-0 whitespace-nowrap rounded-full border border-line bg-white/82 px-3 py-2 text-[13px] font-medium text-ink shadow-soft backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:border-accent/35 hover:bg-white hover:shadow-lift sm:px-4 sm:text-sm"
+                  className="flex items-center justify-center whitespace-nowrap rounded-full border border-line bg-white/82 px-2 py-2 text-[10px] font-medium text-ink shadow-soft backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:border-accent/35 hover:bg-white hover:shadow-lift sm:px-4 sm:text-sm"
                 >
                   {tag}
                 </span>
@@ -75,11 +75,11 @@ function About() {
 
           <motion.div
             variants={itemVariants}
-            className="relative flex flex-col gap-5 lg:min-h-[42rem] lg:items-end lg:pt-20"
+            className="relative flex flex-col gap-4 lg:min-h-[42rem] lg:items-end lg:pt-20"
           >
             <motion.div
               variants={itemVariants}
-              className="about-float-slow relative w-full lg:w-full lg:max-w-[32rem]"
+              className="about-float-slow relative w-full max-w-[32rem] lg:w-full"
             >
               <motion.article
                 whileHover={{ scale: 1.03, y: -4 }}
@@ -95,7 +95,7 @@ function About() {
 
             <motion.div
               variants={itemVariants}
-              className="about-float-medium relative w-full lg:w-full lg:max-w-[32rem]"
+              className="about-float-medium relative w-full max-w-[32rem] lg:w-full"
             >
               <motion.article
                 whileHover={{ scale: 1.03, y: -4 }}
@@ -111,7 +111,7 @@ function About() {
 
             <motion.div
               variants={itemVariants}
-              className="about-float-fast relative w-full lg:w-full lg:max-w-[32rem]"
+              className="about-float-fast relative w-full max-w-[32rem] lg:w-full"
             >
               <motion.article
                 whileHover={{ scale: 1.03, y: -4 }}

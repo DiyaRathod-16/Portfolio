@@ -12,9 +12,9 @@ function Navbar({ activeSection, onNavigate }) {
   };
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-transparent px-4 py-2.5 sm:px-6 sm:py-3">
+    <header className="fixed inset-x-0 top-0 z-50 bg-transparent px-3 py-2 sm:px-6 sm:py-3">
       <div className="section-shell">
-        <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-white/10 bg-night px-4 py-3 text-white shadow-[0_20px_60px_-34px_rgba(25,21,32,0.45)] sm:px-5">
+        <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-white/10 bg-night px-3 py-2.5 text-white shadow-[0_20px_60px_-34px_rgba(25,21,32,0.45)] sm:px-5 sm:py-3">
           <button
             type="button"
             onClick={() => handleNavigate('home')}
@@ -46,7 +46,7 @@ function Navbar({ activeSection, onNavigate }) {
           <button
             type="button"
             onClick={() => setIsMenuOpen((open) => !open)}
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-white/12 bg-night text-white lg:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/12 bg-night text-white lg:hidden"
             aria-label="Toggle navigation menu"
           >
             <Icon name={isMenuOpen ? 'close' : 'menu'} />
@@ -60,7 +60,7 @@ function Navbar({ activeSection, onNavigate }) {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
               transition={{ duration: 0.24, ease: 'easeOut' }}
-              className="mx-auto mt-4 max-w-3xl rounded-[28px] border border-white/10 bg-night p-4 shadow-panel lg:hidden"
+              className="mx-auto mt-3 w-[calc(100vw-1.5rem)] max-w-3xl rounded-[24px] border border-white/10 bg-night p-3 shadow-panel lg:hidden sm:mt-4 sm:w-full sm:rounded-[28px] sm:p-4"
             >
               <div className="grid gap-2">
                 {navItems.map((item) => (
