@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^cmd /c npm install @emailjs/browser$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
